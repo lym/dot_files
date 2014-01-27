@@ -1,6 +1,3 @@
-" source /home/dcarpenter/.vim.cscope
-" source /home/lym/Downloads/vim.cscope
-
 set backspace=2
 
 set hlsearch
