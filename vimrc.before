@@ -1,0 +1,32 @@
+" source /home/dcarpenter/.vim.cscope
+" source /home/lym/Downloads/vim.cscope
+
+set backspace=2
+
+set hlsearch
+
+set statusline=%F%m%r%h\ +%l\ (%v)\ -%L-
+set laststatus=2
+
+syntax enable
+
+highlight ColorColumn ctermbg=7
+if v:progname =~? "mail_vim"
+  set colorcolumn=73
+else
+  set colorcolumn=81
+endif
+
+set undodir=~/.vim/undodir
+set undofile
+set undolevels=1000
+set undoreload=10000
+
+map <C-j> ! cat $ERR_FILE
+
+autocmd BufNewFile,BufRead *.c set cindent
+" set smartindent
+autocmd BufNewFile,BufRead *.c set autoindent
+" set cinkeys=0{,0},:,0#,!,!^F
+
+" call janus#disable_plugin('SuperTab', 'inconvenient for c code')

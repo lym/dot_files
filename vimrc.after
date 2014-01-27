@@ -1,0 +1,8 @@
+set sw=8 sts=8 ts=8 noexpandtab
+set notitle
+
+highlight ExtraWhitespace ctermbg=darkgreen guibg=lightgreen
+match ExtraWhitespace /\s\+$\| \+\ze\t|[^\t]\zs\t\+/
+
+" temporary fix
+inoremap <Tab> <Tab>

@@ -1,0 +1,11 @@
+[user]
+	name = Salym Senyonga
+	email = <Email here>
+[alias]
+	co = checkout
+[sendemail]
+	smtpencryption = tls
+	smtpserver = smtp.googlemail.com
+	smtpuser =  <Email here>
+	smtpserverport = 587
+	smtppass = <Password here>
